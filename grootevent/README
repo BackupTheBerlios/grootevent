@@ -1,3 +1,6 @@
+grootevent - Desktop Manager
+----------------------------
+
 Infos for xml catalog files -> http://www.xmlsoft.org/catalog.html
 
 set --sysconfdir=<path> to /etc or other xml-catalog!!
@@ -5,4 +8,8 @@ set --sysconfdir=<path> to /etc or other xml-catalog!!
 Be sure to use a recent metacity (or use the patch)
 and deactivate Nautilus to manage the background!
 
+A patch for older metacity version could be found on 
+the berlios project site:
+
+https://developer.berlios.de/projects/grootevent/
 
