@@ -1,0 +1,8 @@
+<!--
+This is the DTD for grootevent's configuration files
+-->
+<!ELEMENT grootevent (eventinfo+)>
+<!ELEMENT eventinfo (key*, button, exec)>
+<!ELEMENT key (#PCDATA)>
+<!ELEMENT button (#PCDATA)>
+<!ELEMENT exec (#PCDATA)>

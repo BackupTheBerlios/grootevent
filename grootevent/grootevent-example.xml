@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE grootevent
+  PUBLIC "-//DTD grootevent //EN"
+  "grootevent.dtd">
+<grootevent>
+  
+  <eventinfo>
+    <button>3</button>
+    <exec>xterm -geometry 80x30+__mouse_x__+__mouse_y__</exec>
+  </eventinfo>
+ 
+  <eventinfo>
+    <button>2</button>
+    <exec>gExec2</exec>
+  </eventinfo>
+	
+  <eventinfo>
+    <key>SUPER</key>
+    <button>3</button>
+    <exec>xterm -geometry +$[__mouse_x__-100]+$[__mouse_y__-100]</exec>
+  </eventinfo>
+
+</grootevent>

@@ -1,0 +1,11 @@
+--- screen_old.c	Wed Feb  5 01:46:06 2003
++++ screen.c	Wed Jun 18 10:37:11 2003
+@@ -496,7 +496,7 @@
+                 SubstructureRedirectMask | SubstructureNotifyMask |
+                 ColormapChangeMask | PropertyChangeMask |
+                 LeaveWindowMask | EnterWindowMask |
+-                ButtonPressMask | ButtonReleaseMask |
++                /*ButtonPressMask | ButtonReleaseMask |*/
+                 KeyPressMask | KeyReleaseMask |
+                 FocusChangeMask | StructureNotifyMask |
+ 		attr.your_event_mask);
