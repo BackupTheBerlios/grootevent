@@ -13,6 +13,12 @@ AC_HEADER_STDC
 pkg_modules="gtk+-2.0 >= 1.3.13"
 
 AC_ARG_ENABLE(nls,
+  [  --disable-dtd               Disable dtd support])
+
+AM_CONDITIONAL(DTD, test "$disable_dtd" = no)
+
+
+AC_ARG_ENABLE(nls,
   [  --disable-libwnck           Disable libwnck])
 
 if test "$enable_libwnck" != "no"; then

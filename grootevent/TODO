@@ -1,3 +1,6 @@
 - better documentation
 - help output on specific __help_command__
 - option to change workspaces in a "circle"
+- hack "gnome-panel-control --main-menu" from openbox
+  to display menu everytime at mouse position (if possible)
+  and insert it into grootevent

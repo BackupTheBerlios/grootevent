@@ -13,13 +13,14 @@ the berlios project site:
 
 https://developer.berlios.de/projects/grootevent/
 
-Be sure to have a WM that doesn't use the Root Windows, if you
-start gRootEvent. Otherwise gRootEvent couldn't start. Nautilus
-must be disabled for background. Execute this to disable Nautilus desktop:
+Be sure to have a WM that doesn't grab the Root Window. 
+Otherwise gRootEvent couldn't start. Nautilus
+must be disabled for desktop management. Execute this 
+to disable Nautilus desktop management:
 
 gconftool-2 --type bool --set /apps/nautilus/preferences/show_desktop false
 
-to enable desktop:
+to enable desktop management:
 
 gconftool-2 --type bool --set /apps/nautilus/preferences/show_desktop true
 

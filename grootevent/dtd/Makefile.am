@@ -6,6 +6,7 @@ EXTRA_DIST = $(dtddata_DATA)
 
 DTD_public_name = "-//DTD grootevent //EN"
 
+if DTD
 install-data-local:
 	if [ "xmllint $(sysconfdir)/xml/catalog --noout" == "0" ]; then \
 		xmlcatalog --noout --add "public" $(DTD_public_name) \
@@ -18,4 +19,4 @@ install-data-local:
 
 uninstall-local:
 	xmlcatalog --noout -del $(DTD_public_name) $(sysconfdir)/xml/catalog;
-
+endif
