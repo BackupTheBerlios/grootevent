@@ -1,0 +1,3 @@
+24.12.2003 [andreas] <linux@brachttal.net>
+    Button 1 doesn't longer has the scroll bug. A little hacky,
+    but it works.

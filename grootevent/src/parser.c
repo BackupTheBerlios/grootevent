@@ -69,10 +69,12 @@ void parseEventInfo (xmlDocPtr doc, xmlNodePtr cur)
       if ((key_val >= 1) && (key_val <= 3))
       {
 	eventinfonode->button = key_val;
+        eventinfonode->scroll = 0;
       }
       else
       {
 	eventinfonode->button = button_char2int (key);
+        eventinfonode->scroll = 1;
       }
       xmlFree (key);
     }

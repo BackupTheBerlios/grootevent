@@ -45,6 +45,7 @@ struct eventinfo
 {
   GList *modifier;			 /* a modifier key */
   gint button;				 /* a mouse button or wheel */
+  gint scroll;				 /* a mouse button or wheel */
   gchar *exec_app;			 /* a external app to exec or a internal command */
   gint exec_app_attribute;		 /* save attributes */
 };

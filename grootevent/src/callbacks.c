@@ -43,6 +43,7 @@ void event_func (GdkEvent *event,
 	  /* start app if all modifiers and wheel match */
 	  if ((modifier->next == NULL) &&
 	      (mod_bol == TRUE) &&
+	      (eventinfonode->scroll == 1) &&
 	      (event->scroll.direction == eventinfonode->button))
 	  {
 	    start_app (eventinfonode->exec_app,
@@ -57,6 +58,7 @@ void event_func (GdkEvent *event,
 	g_printerr ("no modifier\n");
 	/* exec app if wheel match and no modifiers are given */
 	if ((event->scroll.direction == eventinfonode->button) &&
+	    (eventinfonode->scroll == 1) &&
 	    ((event->scroll.state & GDK_ALT_MASK) != GDK_ALT_MASK) &&
 	    ((event->scroll.state & GDK_ALTGR_MASK) != GDK_ALTGR_MASK) &&
 	    ((event->scroll.state & GDK_SUPER_MASK) != GDK_SUPER_MASK) &&
@@ -107,6 +109,7 @@ void event_func (GdkEvent *event,
 	  /* start app if all modifiers and buttons match */
 	  if ((modifier->next == NULL) &&
 	      (mod_bol == TRUE) &&
+	      (eventinfonode->scroll == 0) &&
 	      (event->button.button == eventinfonode->button))
 	  {
 	    g_printerr ("mod\n");
@@ -121,6 +124,7 @@ void event_func (GdkEvent *event,
       {	
 	/* exec app if buttons match and no modifiers are given */
 	if ((event->button.button == eventinfonode->button) &&
+            (eventinfonode->scroll == 0) &&
 	    ((event->button.state & GDK_ALT_MASK) != GDK_ALT_MASK) &&
 	    ((event->button.state & GDK_ALTGR_MASK) != GDK_ALTGR_MASK) &&
 	    ((event->button.state & GDK_SUPER_MASK) != GDK_SUPER_MASK) &&

@@ -1,9 +1,4 @@
 - make a better data structure
     - use xml attributes instead of keys
-- left button changes workspace
-    -> because GDK_SCROLL_DOWN is "1" as button 1
-       big bug I think; will fix it next time
-- change names of SCROLL_UP and SCROLL_DOWN 
-    -> perhaps SCROLL_FORWARD and SCROLL_BACKWARD?
 - change xml key and exec violates the DTD
 
